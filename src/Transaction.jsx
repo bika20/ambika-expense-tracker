@@ -1,9 +1,7 @@
 import React from 'react'
-import {
-  useContext
-
-} from "react";
+import {  useContext  } from "react";
 import { GlobalContext } from "./context/GlobalState";
+import DeleteButton from './DeleteButton';
 
 
 function Trasaction({ transac }) {
@@ -14,9 +12,15 @@ function Trasaction({ transac }) {
     color: transac.amount > 0 ? 'green' : 'red'
   };
   return (
-    <div>
-      <li className="list">
-        {transac.text}<span className='spn' style={textcolor}>  {sign}${Math.abs(transac.amount)}</span> <button onClick={() => deleteTransaction(transac.id)} className="deletebtn">-</button>
+    <div className='w-[305px]'>
+      <li className="w-[305px] flex items-center justify-between">
+        <p className='w-4'>{transac.text}&#9;</p>
+        <p className='w-8' style={textcolor}> 
+          ₹&nbsp;{sign}{Math.abs(transac.amount)}
+        </p>
+        <button className='flex items-center' onClick={() => deleteTransaction(transac.id)}>
+          <DeleteButton />
+        </button>
       </li>
     </div>
   )

@@ -9,11 +9,9 @@ export default function Balance(){
 
 
     return(
-        
-        <div id="bal">
-        <h2 >Your Balance</h2>
-        <h4 id="balance">{total}</h4>
-        
+        <div className=" w-[305px] h-[60px] px-4 mb-2">
+            <p className="text-[22px] font-semibold madimi-one-regular">Your Balance</p>
+            <p className="border border-[#b6b4b4] pl-2 rounded-[5px] text-[25px]">₹&nbsp;{total}</p>
         </div>
     )
 }

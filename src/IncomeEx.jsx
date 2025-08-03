@@ -12,16 +12,16 @@ export default function IncomeEx(){
 
 
     return(
-        <div className="inex">
-            <span>
-                <h4>INCOME</h4>
-                <p id="income" className="income">${income}</p>
-            </span><span>
-                <h4>EXPENSE</h4>
-                <p id="expense" className="expense">${expense}</p>
+        <div className="w-[250px] flex gap-10 text-left justify-center items-center border-[3px] border-black border-dashed rounded-[10px] bg-[#F3F3F3]">
+            <span className="h-[60px] mt-2">
+                <p className="font-semibold">INCOME</p>
+                <p className="text-green-600">₹&nbsp;{income}</p>
             </span>
-
-            </div>
+            <span className="h-[60px] mt-2">
+                <p className="font-semibold">EXPENSE</p>
+                <p className="text-red-600">₹&nbsp;{expense}</p>
+            </span>
+        </div>
         
     )
 }
