@@ -9,11 +9,11 @@ export default function Addtransaction(){
     const onSubmit=(e)=>{
         e.preventDefault();
 
-        if (text.trim() === '' || amount === '') {
+        if (text.trim() === '' || isNaN(amount) || amount === 0) {
             alert('Please fill in both fields correctly.');
             return;
         }
-        
+
         const newTransaction={
             id:Math.floor(Math.random()*10000),
             text,
