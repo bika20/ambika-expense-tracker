@@ -4,10 +4,16 @@ import { FaPlus } from 'react-icons/fa';
 import { GlobalContext } from "./context/GlobalState";
 export default function Addtransaction(){
     const[text,settext]=useState('');
-    const[amount,setamount]=useState('');
+    const[amount,setamount]=useState(0);
     const{add}=useContext(GlobalContext);
     const onSubmit=(e)=>{
         e.preventDefault();
+
+        if (text.trim() === '' || amount === '') {
+            alert('Please fill in both fields correctly.');
+            return;
+        }
+        
         const newTransaction={
             id:Math.floor(Math.random()*10000),
             text,
