@@ -5,15 +5,19 @@
 * {
   margin: 0;
   padding: 0;
+  color:white;
+
+
 }
 
 body {
-  background: url('/src/assets/money-background.png');
+  background: linear-gradient(173deg,rgba(95, 143, 107, 1) 0%, rgba(255, 255, 255, 1) 87%);
   background-size: cover;
   background-position: center;
   height: 100vh;
   width: 100vw;
 }
+
 
 .madimi-one-regular {
   font-family: "Madimi One", sans-serif;

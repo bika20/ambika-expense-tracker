@@ -14,11 +14,11 @@ export default function IncomeEx(){
     return(
         <div className="w-[250px] flex gap-10 text-left justify-center items-center border-[3px] border-black border-dashed rounded-[10px] bg-[#F3F3F3]">
             <span className="h-[60px] mt-2">
-                <p className="font-semibold">INCOME</p>
-                <p className="text-green-600">₹&nbsp;{income}</p>
+                <p className="font-semibold text-black">INCOME</p>
+                <p className="text-[#308a09] ">₹&nbsp;{income}</p>
             </span>
             <span className="h-[60px] mt-2">
-                <p className="font-semibold">EXPENSE</p>
+                <p className="font-semibold text-black">EXPENSE</p>
                 <p className="text-red-600">₹&nbsp;{expense}</p>
             </span>
         </div>

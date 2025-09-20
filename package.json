@@ -1,5 +1,6 @@
 {
   "name": "expense-tracker-v2",
+  "homepage": "https://bika20.github.io/<ambi-expense>",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,6 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "homepage": "https://bika20.github.io/ambika-expense-tracker",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist -r https://github.com/bika20/ambika-expense-tracker.git"
   },
   "dependencies": {

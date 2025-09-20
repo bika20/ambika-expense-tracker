@@ -7,7 +7,7 @@ const Tralist=()=>{
     const {transactions} =useContext(GlobalContext);
 
     return(
-        <div className="w-[305px]">
+        <div className="  w-[305px]">
             <p className="text-[22px] font-semibold mb-1 madimi-one-regular">History</p>
 
             <ul>
