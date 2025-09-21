@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: "/ambika-expense-tracker/",
   plugins: [react()],
-  base:"/ambi-expense",
+
 })
